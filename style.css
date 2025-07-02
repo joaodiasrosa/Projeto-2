@@ -1,46 +1,51 @@
-/* style.css */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #74ebd5, #9face6);
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: start;
+  min-height: 100vh;
+  padding: 40px 20px;
 }
 
 .container {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 40px;
-  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 h1 {
-  font-size: 2.5rem;
+  text-align: center;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .button-group {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 button {
-  padding: 15px 25px;
-  font-size: 1rem;
+  padding: 12px;
+  font-size: 16px;
   border: none;
   border-radius: 10px;
   background-color: #4b6cb7;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #182848;
-  transform: scale(1.05);
+  background-color: #3b5998;
+}
+
+.conteudo {
+  margin-top: 20px;
 }
