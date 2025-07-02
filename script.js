@@ -1,11 +1,23 @@
 function abrirFormulario() {
-  window.location.href = "formulario.html";
+  fetch('formulario.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("conteudo").innerHTML = data;
+    });
 }
 
 function abrirFrutas() {
-  window.location.href = "frutas.html";
+  fetch('frutas.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("conteudo").innerHTML = data;
+    });
 }
 
 function abrirJogo() {
-  window.location.href = "jogo.html";
+  fetch('jogo.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("conteudo").innerHTML = data;
+    });
 }
